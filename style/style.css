@@ -1,0 +1,23 @@
+body {
+    font-family: monospace, monospace;
+    background-color: black;
+}
+.terminal {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+pre {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    height: 100vh;
+}
+#invisibleInput {
+    position: absolute;
+    bottom: 0;
+    margin: 20vh;
+}

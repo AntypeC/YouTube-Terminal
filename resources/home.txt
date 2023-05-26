@@ -1,0 +1,43 @@
+----------------------------------------------------------------------------------------
+                               Terminal YouTube Website
+----------------------------------------------------------------------------------------
+
+User: [your_username]            Search: [keywords]            Queue: [number_of_videos]
+
+----------------------------------------------------------------------------------------
+Search Results:
+
+  1. Video Title 1        Uploader: User1       Views: 100K  👍: 2K   👎: 200   Duration: 10:30
+  2. Video Title 2        Uploader: User2       Views: 50K   👍: 1K   👎: 100   Duration: 5:00
+  3. Video Title 3        Uploader: User3       Views: 10K   👍: 500  👎: 50    Duration: 2:30
+  4. Video Title 4        Uploader: User4       Views: 5K    👍: 250  👎: 25    Duration: 1:00
+  5. Video Title 5        Uploader: User5       Views: 1K    👍: 100  👎: 10    Duration: 0:30
+
+----------------------------------------------------------------------------------------
+Now Playing: Video Title 1 by User1
+
+Playback:
+  ▶️  Play   ⏸  Pause   ⏹  Stop   🔉  Volume: ▂▃▄▅▆▇██   ⏩  Fast Forward   ⏪  Rewind   ⛶  Fullscreen
+
+----------------------------------------------------------------------------------------
+Video Description:
+
+This is the video description. It includes a lot of useful information about the video.
+
+----------------------------------------------------------------------------------------
+Comments:
+
+  1. UserA: "Great video!"
+  2. UserB: "I learned a lot from this."
+
+----------------------------------------------------------------------------------------
+Related Videos:
+
+  1. Video Title 6
+  2. Video Title 7
+  3. Video Title 8
+
+----------------------------------------------------------------------------------------
+Commands: 'search', 'play', 'pause', 'stop', 'volume', 'like', 'dislike', 'comment', 'help'
+
+----------------------------------------------------------------------------------------

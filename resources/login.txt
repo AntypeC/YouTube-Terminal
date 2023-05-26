@@ -1,0 +1,7 @@
+
+                                                                                                
+Welcome to YouTube Terminal!
+
+To log in to your Google account, please enter your credentials below:
+
+Username/Email: 
