@@ -1,0 +1,5 @@
+Related Videos:
+
+1. Related Video Title 1   Uploader: User1    Views: 80K     Duration: 8:00
+2. Related Video Title 2   Uploader: User2    Views: 60K     Duration: 6:00
+3. Related Video Title 3   Uploader: User3    Views: 40K     Duration: 4:00

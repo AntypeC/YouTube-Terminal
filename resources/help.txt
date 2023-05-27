@@ -1,0 +1,16 @@
+
+
+Help Menu:
+
+Commands:
+    home            - View the home screen
+    search <keyword>- Search for a video
+    select <number> - Select a video from search results
+    play            - Play the currently selected video
+    pause           - Pause the currently playing video
+    stop            - Stop the currently playing video
+    volume <0-10>   - Adjust the video volume
+    comment <text>  - Comment on the currently selected video
+    quit            - Exit the terminal YouTube app
+
+    

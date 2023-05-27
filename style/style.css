@@ -17,6 +17,10 @@ pre {
     height: 100vh;
 }
 #invisibleInput {
+    color: transparent; 
+    background-color: transparent; 
+    border: none; 
+    outline: none;
     position: absolute;
     bottom: 0;
     margin: 20vh;

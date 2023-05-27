@@ -1,0 +1,8 @@
+Now Playing: Video Title 1        Uploader: User1       Views: 100K    Duration: 10:00
+
+Commands:
+    play                    - Play the video
+    pause                   - Pause the video
+    stop                    - Stop the video
+    volume <0-10>           - Adjust the video volume
+    comment <text>          - Comment on the video

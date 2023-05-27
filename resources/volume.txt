@@ -1,0 +1,5 @@
+Volume Control:
+
+Current Volume Level: 5
+
+Adjust volume with 'volume <0-10>'

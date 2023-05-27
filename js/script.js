@@ -9,8 +9,8 @@ var credentials = {
     password: "",
 }
 
-var speed = 50; // change to a larger value for a faster typing effect
-var i = 1;
+var speed = 5; // change to a larger value for a faster typing effect
+var i = 0;
 var prompts = ["Username/Email: ", "Password: "];
 var currentPrompt = 0;
 var boundary = 0;
@@ -41,7 +41,7 @@ input.onkeyup = function(e) {
             credentials.email = output.innerHTML.slice(boundary);
             console.log("email: "+credentials.email)
             credentials.step = 'password';
-            typeWriter('\nPassword: ');
+            typeWriter("");
         } else if (credentials.step === 'password') {
             credentials.password = output.innerHTML.slice(boundary);
             console.log("password: "+credentials.password)
@@ -49,8 +49,28 @@ input.onkeyup = function(e) {
             credentials.loggedIn = true;
             // clear the terminal and show logged-in message
             output.innerHTML = 'You are logged in as ' + credentials.email + '.\n';
+            setTimeout(() => {
+                msg = readTextFile("./resources/start.txt");
+                typeWriter(msg);
+            }, 5000)
+        } else if (credentials.step === "loggedIn") {
+            command = output.innerHTML.slice(boundary).toLowerCase();
+            if (command.startsWith("search") && command.trim() != "search") {
+                query = command.replace("search ", "")
+                console.log(query)
+                msg = readTextFile("./resources/search.txt");
+                console.log(msg)
+                typeWriter(msg)
+            } else if (command == "help") {
+                msg = readTextFile("./resources/help.txt");
+                typeWriter(msg)
+            } else if (command == "clear") {
+                output.innerHTML = "";
+                typeWriter("")
+            }
         }
     }
+
     if (e.keyCode == 8) {
         // Make sure there is at least one character to delete and that it's within the user input
         if (output.innerHTML.length > boundary) {
@@ -75,20 +95,20 @@ function typeWriter(text) {
         }, speed);
     } else {
         if (credentials.loggedIn == true) {
-            terminal.innerHTML += "antype@youtube:~$ ";
+            output.innerHTML += "\nyoutube@terminal:~$ ";
         } else if (credentials.step === 'email') {
             output.innerHTML += '\nUsername/Email: ';
-            boundary = output.innerHTML.length;
         } else if (credentials.step === 'password') {
             output.innerHTML += '\nPassword: ';
-            boundary = output.innerHTML.length;
         }
-
+        boundary = output.innerHTML.length;
+        i = 0;
     }
 }
 
 // start with the email prompt
-typeWriter("Welcome to YouTube Terminal");
+login_msg = readTextFile("./resources/login.txt");
+typeWriter(login_msg);
 
 document.addEventListener("click", () => {
     input.focus();

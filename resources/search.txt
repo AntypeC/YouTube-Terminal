@@ -1,0 +1,10 @@
+
+
+Search Results for '<keyword>':
+
+1. Video Title 1        Uploader: User1       Views: 100K    Duration: 10:00
+2. Video Title 2        Uploader: User2       Views: 50K     Duration: 20:00
+3. Video Title 3        Uploader: User3       Views: 10K     Duration: 30:00
+4. Video Title 4        Uploader: User4       Views: 5K      Duration: 40:00
+5. Video Title 5        Uploader: User5       Views: 1K      Duration: 50:00
+
